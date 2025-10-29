@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://abtalkspodcast.github.io/A2.AI",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,9 +11,9 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "start": "vite",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://abtalkspodcast.github.io/A2.AI",
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
     "lucide-react": "^0.344.0",
